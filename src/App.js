@@ -20,7 +20,9 @@ export default function App() {
             open-sourced on GitHub
           </a>{" "}
           and{" "}
-          <a href="https://www.MahinParto.com/" target="_blank">
+          <a
+            href="https://courageous-axolotl-087ebd.netlify.app/"
+            target="_blank">
             hosted on Netlify
           </a>
         </footer>
