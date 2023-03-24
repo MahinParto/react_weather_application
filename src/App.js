@@ -10,21 +10,18 @@ export default function App() {
 
         <footer>
           This project was coded by{" "}
-          <a
-            href="https://www.MahinParto.com/"
-            target="_blank"
-            rel="noopener noreferrer">
+          <a href="https://www.MahinParto.com/" target="_blank" rel="noopener">
             Mahin Parto
           </a>{" "}
           and is{" "}
           <a
             href="https://github.com/MahinParto/react_weather_application"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener">
             open-sourced on GitHub
           </a>{" "}
           and{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.MahinParto.com/" target="_blank" rel="noopener">
             hosted on Netlify
           </a>
         </footer>
