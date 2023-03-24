@@ -1,0 +1,127 @@
+ul {
+  list-style-type: none;
+}
+.main {
+  width: 630px;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border: 2px solid black;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.top {
+  margin-top: 20px;
+}
+.degree-top {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(41 0 177);
+}
+#locationbtn {
+  font-size: 15px;
+  margin-left: 70px;
+  margin-right: 0px;
+}
+.centericon {
+  max-width: 75px;
+  max-height: 75px;
+}
+.mid-01 {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.location-city {
+  font-size: 35px;
+  padding-left: 15px;
+}
+.time {
+  font-size: 30px;
+}
+.country {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.date {
+  font-size: 15px;
+}
+.whetherStatus {
+  font-size: 30px;
+}
+.humidity {
+  font-size: 15px;
+}
+.humtitle {
+  font-weight: bold;
+  color: black;
+}
+.humpercent {
+  font-weight: bold;
+  color: rgb(41 0 177);
+}
+.wind {
+  font-size: 15px;
+}
+.windtitle {
+  font-weight: bold;
+  color: black;
+}
+.windnumb {
+  font-weight: bold;
+  color: rgb(41 0 177);
+}
+.days {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.day-part {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  width: 16.5%;
+  border: 1px dotted black;
+}
+.day-name {
+  text-align: center;
+  font-size: 15px;
+}
+.day-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 65px;
+  max-width: 70px;
+}
+.day-tepm {
+  text-align: center;
+}
+.tempmax {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(41 0 177);
+}
+.tempmin {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(125, 133, 221);
+}
+.search {
+  text-align: center;
+}
+.searchbox {
+  margin: 0 auto;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 2px 0 gray;
+  height: 40px;
+  outline: 0;
+  padding: 10px;
+  width: 300px;
+}
+.surceLine {
+  margin-left: 335px;
+  margin-top: -15px;
+}
+
+.opensurce {
+  text-align: left;
+  font-size: 15px;
+}
