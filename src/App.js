@@ -17,7 +17,10 @@ export default function App() {
             Mahin Parto
           </a>{" "}
           and is{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/MahinParto/react_weather_application"
+            target="_blank"
+            rel="noopener noreferrer">
             open-sourced on GitHub
           </a>{" "}
           and{" "}
