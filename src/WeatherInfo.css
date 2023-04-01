@@ -17,6 +17,12 @@ ul {
   font-size: 30px;
   color: rgb(41 0 177);
 }
+.unit {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(24, 0, 101);
+}
+
 #locationbtn {
   font-size: 15px;
   margin-left: 70px;

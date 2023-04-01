@@ -2,6 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherInfo.css";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -9,19 +10,7 @@ export default function WeatherInfo(props) {
       <div>
         <div className="top">
           <div className="row">
-            <div className="col-3">
-              <span className="btn-group" role="group">
-                <input type="radio" className="btn-check" />
-                <label className="btn btn-outline-primary" for="btnradio1">
-                  C
-                </label>
-
-                <input type="radio" className="btn-check" name="btnradio" />
-                <label className="btn btn-outline-primary" for="btnradio3">
-                  F
-                </label>
-              </span>
-            </div>
+            <div className="col-3"></div>
 
             <div className="col-6 text-center">
               <ul>
@@ -30,20 +19,17 @@ export default function WeatherInfo(props) {
                   <div className="country">{props.data.country}</div>
                 </li>
                 <li>
+                  <WeatherTemperature celsius={props.data.temperature} />
+                </li>
+                <li>
                   <span>
                     <WeatherIcon code={props.data.icon} />
                   </span>
                 </li>
-                <li>
-                  <div className="degree-top"></div>
-                </li>
+                <li></li>
               </ul>
             </div>
-            <div className="col-3">
-              <button type="button" className="btn btn-outline-success">
-                📍
-              </button>
-            </div>
+            <div className="col-3"></div>
           </div>
         </div>
 
@@ -72,9 +58,7 @@ export default function WeatherInfo(props) {
                     <FormattedDate date={props.data.date} />
                   </span>
                 </li>
-                <li>
-                  <span className="date">{}</span>
-                </li>
+                <li></li>
               </ul>
             </div>
           </div>
