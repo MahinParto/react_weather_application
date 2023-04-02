@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForcast from "./WeatherForcast ";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -18,6 +20,8 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.city,
       country: response.data.country,
+      latitude: response.data.coordinates.latitude,
+      longitude: response.data.coordinates.longitude,
     });
   }
 
@@ -38,24 +42,31 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container">
+      <div className="container container-sm">
         <div className="main">
           <WeatherInfo data={weatherData} />
-          <div className="search">
-            <div className="row">
-              <div className="col">
+          <div className="forcast">
+            <WeatherForcast
+              latitude={weatherData.latitude}
+              longitude={weatherData.longitude}
+            />
+          </div>
+
+          <div className="row">
+            <div className="col">
+              <div className="search">
                 <form className="search-form" onSubmit={handleSubmit}>
                   <input
                     type="search"
-                    placeholder="Enter a city.."
-                    className="form-control"
+                    placeholder="Enter a city name ..."
+                    className="searchbox"
                     autoFocus="on"
                     onChange={handleCityChange}
                   />
                   <input
                     type="submit"
                     value="Search"
-                    className="btn btn-primary w-100"
+                    className="btn btn-primary w-20"
                   />
                 </form>
               </div>

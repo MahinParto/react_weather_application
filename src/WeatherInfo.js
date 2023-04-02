@@ -4,6 +4,8 @@ import "./WeatherInfo.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 
+import "bootstrap/dist/css/bootstrap.css";
+
 export default function WeatherInfo(props) {
   return (
     <div>
@@ -23,7 +25,7 @@ export default function WeatherInfo(props) {
                 </li>
                 <li>
                   <span>
-                    <WeatherIcon code={props.data.icon} />
+                    <WeatherIcon code={props.data.icon} size={60} />
                   </span>
                 </li>
                 <li></li>
@@ -63,8 +65,6 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-
-        <div className="forcast"></div>
       </div>
     </div>
   );
